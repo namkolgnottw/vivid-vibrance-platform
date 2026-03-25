@@ -5,7 +5,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ image, title, price }: ProductCardProps) => (
-  <div className="product-card">
+  <div className="product-card group">
     <div className="overflow-hidden">
       <img
         src={image}
