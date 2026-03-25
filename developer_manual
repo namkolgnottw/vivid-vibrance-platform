@@ -1,0 +1,31 @@
+Developer Manual
+
+Short summary:
+This is a Vite + React + TypeScript single-page application with Tailwind CSS for styling.
+
+Key technologies:
+- Framework/build: Vite, React 18, TypeScript
+- Styling: Tailwind CSS (tailwindcss-animate), PostCSS, autoprefixer
+- UI / Components: Radix UI primitives, shadcn-style components (lovable-tagger present), lucide-react
+- State / Data & Forms: @tanstack/react-query, react-hook-form, zod
+- Routing & Charts: react-router-dom, recharts
+- Tooling & Tests: ESLint, Vitest (jsdom), Playwright (lovable config)
+- Build/Dev plugins: @vitejs/plugin-react-swc
+- Utility libs: clsx, date-fns, sonner, tailwind-merge
+
+Project files of interest:
+- package.json (dependencies & scripts)
+- vite.config.ts (Vite config with React SWC plugin and component tagger)
+- tailwind.config.ts (Tailwind setup and theme extensions)
+- tsconfig.json (TypeScript config and path aliases)
+- vitest.config.ts (Vitest setup)
+- playwright.config.ts (Playwright / lovable config)
+- src/ (application source code)
+- public/ (static assets)
+
+Notes:
+- Uses TypeScript but allows some non-strict flags (see tsconfig.json).
+- Component tagging (lovable-tagger) is enabled in development via Vite config.
+- Tailwind content includes src, pages, and components folders.
+
+Keep this file updated when adding major frameworks, testing tools, or CI changes.
